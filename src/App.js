@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy } from 'react';
+import { BrowserRouter as Router, Route, Link, Switch, Redirect, withRouter } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Login from './pages/login'
+const HomePage = lazy(() => import('./pages/home'));
+// import HomePage from './pages/home'
+
+const BasicRoute = () => {
+   return ( <Router>
+        {/* <div>
+            <Link to="/home"></Link>
+            <Link to="/login"></Link>
+            <Link to="/person"></Link>
+            <Link to="/detail"></Link>
+        </div> */}
+        <div>
+            {/* <Route exact path="/" render={() => <Redirect to="/login" />} /> */}
+            <Route path="/login" component={Login} />
+            <Route path="/home" component={HomePage} />
+        </div>
+
+    </Router>
+   )
 }
 
-export default App;
+export default BasicRoute

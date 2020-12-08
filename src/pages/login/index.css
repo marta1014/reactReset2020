@@ -1,0 +1,25 @@
+/* // npm install node-sass@4.14.1 sass-loader 
+// 第二步：配置webpack.config.js
+// 路径：my-app\node_modules\react-scripts\config\webpack.config.js
+
+// {
+// loader: require.resolve('file-loader'),
+//    exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/],
+//    options: {
+//      name: 'static/media/[name].[hash:8].[ext]',
+//    },
+//  },
+//  //以下为新增内容
+//  {
+//    test: /\.scss$/,
+//    loaders: ['style-loader', 'css-loader', 'sass-loader']
+//  }
+// @import './styles/xxx.scss'; */
+.loginPage .loginCard {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }

@@ -1,3 +1,4 @@
+@import '~antd/dist/antd.css';
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +6,82 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 200px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.loadingClass {
+  font-size: 20px;
+  color: #008c8c;
+}
+
+.box {
+  margin: 100px auto;
+  width:360px;
+  padding:20px;
+  border:1px solid #eee;
+  color:#666;
+}
+
+.box p {
+  margin-bottom: 10px;
+}
+
+.box p input, .box p textarea {
+  width:100%;
+  padding:0 10px;
+  box-sizing: border-box;
+  border:1px solid #eee;
+}
+
+.box p input {
+  height:35px;
+  line-height: 35px;
+}
+
+.box p textarea {
+  padding:10px;
+  height: 100px;
+  /* resize:none; */
+}
+
+.btn {
+  padding:0 10px;
+  height:35px;
+  line-height: 35px;
+  text-align: center;
+  border:none;
+  background:rgb(24, 148, 250);
+  color:#fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.line {
+  margin-top:20px;
+  background:#eee;
+  height:1px;
+  border:none
+}
+
+.list {
+  padding-left:10px;
+}
+.pline {
+  border-bottom: 1px solid #eee;
+  line-height: 35px;
+}
+
+.list .nodata {
+  list-style: none;
+  text-align: center;
+}
+.face{
+  font-size: 100px;
+  position:relative;
+  /* transform: translate(20%,40%) */
 }
